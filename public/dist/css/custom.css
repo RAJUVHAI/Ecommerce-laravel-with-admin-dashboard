@@ -1,0 +1,120 @@
+.body_bg {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+nav.main-header {
+    background-color: #0e7bcf;
+}
+
+.nav-item i {
+    color: #fff;
+}
+
+.custom-button {
+    background: #450aaa;
+    color: #fff;
+    transition: 0.5s all ease;
+}
+
+.custom-button:hover {
+    background: #672ec9;
+    color: #fff;
+}
+.card-box {
+    margin-top: 100px;
+}
+
+.bg_table {
+    background: #f5f5f5;
+}
+
+.bg_product {
+    background: #fff;
+}
+
+.dt-button {
+    padding: 5px;
+    background: #0062cc;
+    color: #fff;
+}
+.dt-button:hover {
+    background: #0351a5;
+    color: #fff;
+}
+
+.center-margin {
+    margin: 50px auto;
+    background-color: rgb(248, 245, 245);
+}
+
+.bg_customer {
+    background: linear-gradient(
+        to right,
+        #514a9d,
+        #24c6dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.bg_product {
+    background: #134e5e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #71b280,
+        #134e5e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #71b280,
+        #134e5e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.bg_order {
+    background: #ff512f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #f09819,
+        #ff512f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #f09819,
+        #ff512f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.bg_sale {
+    background: #e52d27; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #b31217,
+        #e52d27
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #b31217,
+        #e52d27
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.invoice_wrap {
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-box {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card-box {
+        margin-top: 30px;
+    }
+}
