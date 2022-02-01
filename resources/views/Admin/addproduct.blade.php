@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class="ml-4">
-        <h2>Add New Product</h2>
-        
-    </div>
+    <div class="card p-2">
+        <div class="ml-4">
+            <h2>Add New Product</h2>
+        </div>
         <div class="mt-5">
             <form class="d-flex justify-content-around">
                 <div class="product_l_hand col-lg-8">
@@ -94,9 +94,12 @@
                 </div>
 
 
-                
+
             </form>
         </div>
+    </div>
+
+
 
 </div>
 

@@ -9,7 +9,7 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-header">
-                    <h1 class="card-title font-weight-bold ">Manage Order List</h1>
+                    <h3>Manage Order List</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">

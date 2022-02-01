@@ -4,8 +4,7 @@
 
 <div class="container-fluid">
     <div class="d-flex justify-content-between mb-3">
-        <h3>Order List</h3>
-
+        <div class=""></div>
         <a href="{{route('ordertable')}}"><button type="submit" class="btn btn-primary"><i
                     class="fas fa-plus-circle mr-2"></i>Add Order</button>
         </a>
@@ -14,9 +13,8 @@
         <div class="col-12">
             <!-- /.card -->
             <div class="card">
-                <div class="card-header d-flex justify-content-between">
-
-
+                <div class="card-header">
+                    <h3>Order List</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
