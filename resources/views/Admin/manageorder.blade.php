@@ -8,7 +8,7 @@
         <div class="col-12">
             <!-- /.card -->
             <div class="card">
-                <div class="card-header">
+                <div class="card-header card-title">
                     <h3>Manage Order List</h3>
                 </div>
                 <!-- /.card-header -->

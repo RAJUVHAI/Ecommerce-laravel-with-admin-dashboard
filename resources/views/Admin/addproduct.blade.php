@@ -4,16 +4,17 @@
 
 <div class="container-fluid">
     <div class="card p-2">
-        <div class="ml-4">
-            <h2>Add New Product</h2>
+        <div class="card-header card-title">
+            <h3>Add Product</h3>
         </div>
-        <div class="mt-5">
-            <form class="d-flex justify-content-around">
+        <div class="p-2 card-body">
+            <form class="d-flex justify-content-between" action="POST" method="multipart/form-data" >
                 <div class="product_l_hand col-lg-8">
                     <div class="form-group">
                         <label for="p_name">Product Name</label>
-                        <input type="text" class="form-control form-control-md" id="p_name" placeholder="Product Name">
-
+                        <input type="text" name="p_name" class="form-control form-control-md" id="p_name" placeholder="Product Name">
+                       
+                    
                     </div>
 
                     <div class="form-group">
@@ -29,26 +30,6 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <table class="table ">
-                            <thead>
-                                <tr class="">
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Buying Price</th>
-                                    <th scope="col">MRP Price</th>
-                                    <th scope="col">Selling Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="">
-                                    <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                    <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                    <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                    <td><input class="col-lg-10" type="number" placeholder="Selling Price"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                     <div class="form-group">
                         <label for="summernote" class="">Short Description</label>
                         <div class="">
@@ -76,19 +57,23 @@
                         </select>
 
                     </div>
-                    <div class="form-group">
-                        <label for="p_image">Image</label>
-                        <input type="file" class="form-control-file" id="p_image">
-
-                    </div>
+                   
 
                     <div class="form-group ">
-                        <label for="">Status</label>
-                        <select class="form-control">
-                            <option>Pending</option>
-                            <option>Received</option>
-                            <option>Delivered</option>
-                        </select>
+                        <label for="Quantity">Quantity</label>
+                        <input type="number" class="form-control" id="Quantity">
+                    </div>
+                    <div class="form-group ">
+                        <label for="Buying">Buying Price</label>
+                        <input type="number" class="form-control" id="Buying">
+                    </div>
+                    <div class="form-group ">
+                        <label for="mrp">MRP Price</label>
+                        <input type="number" class="form-control" id="mrp">
+                    </div>
+                    <div class="form-group ">
+                        <label for="selling">Selling Price</label>
+                        <input type="number" class="form-control" id="selling">
                     </div>
                     <button type="submit" class="btn btn-primary">Publish</button>
                 </div>

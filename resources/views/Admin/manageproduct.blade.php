@@ -6,7 +6,7 @@
     <div class="col-lg-12 table-border border-light bg_table shadow-sm p-3 ">
         <!-- /.card -->
         <div class="card">
-            <div class="card-header">
+            <div class="card-header card-title">
                 <h3>Product List</h3>
             </div>
             <div class="card-body">
@@ -221,7 +221,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="">
+                <form action="">    
 
                     <div class="form-group">
                         <label for="p_image">Image</label>
@@ -255,10 +255,10 @@
                                     </thead>
                                     <tbody>
                                         <tr class="">
-                                            <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                            <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                            <td><input class="col-lg-10" type="number" placeholder="0.00"></td>
-                                            <td><input class="col-lg-10" type="number" placeholder="Selling Price"></td>
+                                            <td><input class="col-lg-10 form-control" type="number" placeholder="0.00"></td>
+                                            <td><input class="col-lg-10 form-control" type="number" placeholder="0.00"></td>
+                                            <td><input class="col-lg-10 form-control" type="number" placeholder="0.00"></td>
+                                            <td><input class="col-lg-10 form-control" type="number" placeholder="Selling Price"></td>
                                         </tr>
                                     </tbody>
                                 </table>

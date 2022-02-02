@@ -1,7 +1,21 @@
-.body_bg {
-    background-image: url(../img/background.jpg);
+.login_bg {
+    background: url(../img/login-bg.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    position: relative;
+}
+
+.position-card {
+    position: absolute;
+
+    left: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+    .position-card {
+        position: absolute;
+        left: 0%;
+    }
 }
 
 nav.main-header {

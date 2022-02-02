@@ -4,11 +4,11 @@
 
 <div class="container-fluid">
     <div class="card">
-        <div class="card-header">
+        <div class="card-header card-title">
             <h3> Catagories </h3>
         </div>
-        <div class="d-flex justify-content-between  mt-5">
-            <div class="col-lg-3 ml-2  ">
+        <div class="card-body d-flex justify-content-between ">
+            <div class="col-lg-3">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea class="d-block" name="description" id="" cols="38" rows="3"></textarea>
+                        <textarea class="d-block form-control" name="description" id="" cols="38" rows="3"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Add New Catagory</button>
@@ -39,13 +39,13 @@
             </div>
 
             <div class="card col-lg-8 ">
-                <div class="card-header">
-                    <h1 class="card-title">Catagory List</h1>
+                <div class="card-header card-title">
+                    <h3>Catagory List</h3>
                 </div>
 
 
                 <!-- /.card-header -->
-                <div class="card-body">
+                <div class="">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
@@ -66,7 +66,8 @@
                                 <td class="text-center">--------</td>
                                 <td>Inactive</td>
                                 <td>
-                                    <button class="btn btn-success" type="submit"><i class="fas fa-ban"></i></button>
+                                <button class="btn btn-success" type="submit"><i
+                                            class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
                                             class="fas fa-pen-alt"></i></button>
                                     <button class="btn btn-danger" type="submit"><i class="fas fa-trash-alt"></i>

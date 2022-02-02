@@ -283,6 +283,9 @@
 
         <!-- lateast product End-->
     </div>
+    
 </section>
 
+
 @endsection
+

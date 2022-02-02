@@ -3,18 +3,23 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class="d-flex justify-content-between mb-3">
-        <div class=""></div>
-        <a href="{{route('ordertable')}}"><button type="submit" class="btn btn-primary"><i
-                    class="fas fa-plus-circle mr-2"></i>Add Order</button>
-        </a>
-    </div>
+
     <div class="row">
         <div class="col-12">
             <!-- /.card -->
-            <div class="card">
-                <div class="card-header">
-                    <h3>Order List</h3>
+            <div class="card p-3">
+                <div class="ml-4 d-flex justify-content-between ">
+                    <div class=" card-title">
+                        <h3>Order List</h3>
+                    </div>
+                    <div class="mr-4">
+                        <a href="{{route('ordertable')}}">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus-circle mr-2"></i>Add Order
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -249,7 +254,6 @@
 
 
 </div>
-
 
 
 
