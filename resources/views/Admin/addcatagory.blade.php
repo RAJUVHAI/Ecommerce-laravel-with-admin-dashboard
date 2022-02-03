@@ -9,29 +9,39 @@
         </div>
         <div class="card-body d-flex justify-content-between ">
             <div class="col-lg-3">
-                <form>
+                <form action="addcatagory" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="text" class="form-control form-control-md" id="exampleInputEmail1"
-                            placeholder="Catagory Name">
+                        <input name="c_name" type="text" class="form-control form-control-md" id="exampleInputEmail1"
+                            placeholder="Catagory Name" required>
 
                     </div>
                     <div class="form-group ">
-                        <label for="exampleInputEmail1">Parent Catagory</label>
-                        <select class="form-control form-control-md">
-                            <option>Fashion</option>
-                            <option>Gadget</option>
-                            <option>T-shirt</option>
-                            <option>E-electronic</option>
-                            <option>Desktop </option>
-                            <option>Ac</option>
-                            <option>Laptop</option>
+                        <label for="parentcatagory">Parent Catagory</label>
+                        <select name="category" id="parentcatagory" class="form-control form-control-md" required>
+                            <option value="1">Fashion</option>
+                            <option value="1">Gadget</option>
+                            <option value="1">T-shirt</option>
+                            <option value="1">E-electronic</option>
+                            <option value="1">Desktop </option>
+                            <option value="1">Ac</option>
+                            <option value="1">Laptop</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group ">
+                        <label for="catagoryStatus">status</label>
+                        <select name="status" id="catagoryStatus" class="form-control form-control-md" required>
+                            <option value="1">active</option>
+                            <option value="1">Deactive</option>
+                            
                         </select>
 
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea class="d-block form-control" name="description" id="" cols="38" rows="3"></textarea>
+                        <textarea name="c_description" class="d-block form-control" name="description" id="" cols="38" rows="3" required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Add New Catagory</button>
@@ -64,7 +74,7 @@
                                     Fashion
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td>
                                 <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
@@ -95,7 +105,7 @@
                                     T-shirt
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -110,7 +120,7 @@
                                     E-electronic
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -125,7 +135,7 @@
                                     Desktop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -140,7 +150,7 @@
                                     Ac
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -155,7 +165,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -170,7 +180,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -199,7 +209,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -214,7 +224,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -229,7 +239,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i
@@ -244,7 +254,7 @@
                                     Laptop
                                 </td>
                                 <td class="text-center">--------</td>
-                                <td>Inactive</td>
+                                <td>Deactive</td>
                                 <td> <button class="btn btn-success" type="submit"><i
                                             class="far fa-check-circle"></i></button>
                                     <button class="btn btn-primary" type="submit"><i

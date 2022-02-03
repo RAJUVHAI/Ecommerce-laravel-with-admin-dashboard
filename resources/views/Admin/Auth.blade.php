@@ -41,17 +41,17 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                                placeholder="Enter email">
+                                placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
+                                placeholder="Password " required>
                         </div>
                         <div class="form-group mb-0">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" name="terms" value="1" class="custom-control-input"
-                                    id="exampleCheck1">
+                                    id="exampleCheck1" required>
                                 <label class="custom-control-label" for="exampleCheck1">I agree to the
                                     <a href="#">terms of service</a>.</label>
                             </div>

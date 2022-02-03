@@ -65,16 +65,16 @@ class AuthController extends Controller
         // echo $request -> url()."<br>";
         // echo $request -> path();
 
-    //     $rules = [
-    //         'email' => 'required|max:20|email:rfc,dns',
-    //         'password' => 'required',
-    //         'terms' =>'required',
-    //     ];
-        
-    //     $this->validate($request, $rules);
-    //     echo '<pre>';
-    //     print_r($request ->all());
-    //     echo '</pre>';
+        //     $rules = [
+        //         'email' => 'required|max:20|email:rfc,dns',
+        //         'password' => 'required',
+        //         'terms' =>'required',
+        //     ];
+            
+        //     $this->validate($request, $rules);
+        //     echo '<pre>';
+        //     print_r($request ->all());
+        //     echo '</pre>';
     }
 }
 

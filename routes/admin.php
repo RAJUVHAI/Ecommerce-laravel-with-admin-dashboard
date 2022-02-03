@@ -19,13 +19,16 @@ route::get('/manageorder','App\Http\Controllers\Admin\OrderController@manage')->
 
 route::get('/updateorder','App\Http\Controllers\Admin\OrderController@updateorder')->name('updateorder');
 
-route::get('/addproduct','App\Http\Controllers\Admin\OrderController@prductform')->name('addproduct');
+route::get('/addproduct','App\Http\Controllers\Admin\ProductController@prductform')->name('addproduct');
 
-route::get('/manageproduct','App\Http\Controllers\Admin\OrderController@manageproduct')->name('manageproduct');
+route::post('/addproduct','App\Http\Controllers\Admin\ProductController@addProduct')->name('addproduct');
 
-route::get('/addcatagory','App\Http\Controllers\Admin\OrderController@addcatagory')->name('addcatagory');
+route::get('/manageproduct','App\Http\Controllers\Admin\ProductController@manageproduct')->name('manageproduct');
 
-route::get('/managecatagory','App\Http\Controllers\Admin\OrderController@managecatagory')->name('managecatagory');
+route::get('/addcatagory','App\Http\Controllers\Admin\CatagoryController@addcatagory')->name('addcatagory');
+
+route::post('/addcatagory','App\Http\Controllers\Admin\CatagoryController@postCatagory')->name('addcatagory');
+
 
 route::get('/addorder','App\Http\Controllers\Admin\OrderController@ordertable')->name('ordertable');
 
