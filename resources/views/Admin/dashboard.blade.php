@@ -182,95 +182,19 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($latest_product as $value)
                                 <tr>
-                                    <td>1</td>
-                                    <td>#</td>
-                                    <td>HP</td>
-                                    <td>Laptop</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 10</td>
-                                    <td>&#36; 50</td>
-
-
+                                    <td>#{{ $value->id }}</td>
+                                    <td><img src="{{ asset('storage/product-image/'.$value->image) }}" width="50"
+                                            height="50"></td>
+                                    <td>{{ $value->p_name }}</td>
+                                    <td>{{ $value->c_name }}</td>
+                                    <td>{{ $value->quantity }}</td>
+                                    <td>{{ $value->b_price }}</td>
+                                    <td>{{ $value->mrp_price }}</td>
+                                    <td>{{ $value->s_price }}</td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>##</td>
-                                    <td>Tv-Samsung-65UH8500</td>
-                                    <td>Tv</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 100</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>#</td>
-                                    <td>Apple Press</td>
-                                    <td>T-Shirt</td>
-                                    <td> &#36; 20</td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 200</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>#</td>
-                                    <td>Laptop-Apple-2021 </td>
-                                    <td>Laptop</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 200</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>#</td>
-                                    <td>Blue Stars</td>
-                                    <td>Ac</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 250</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>#</td>
-                                    <td>Apple Press</td>
-                                    <td>T-Shirt</td>
-                                    <td> &#36; 20</td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 50</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>#</td>
-                                    <td>Shoes-Nike-A5 </td>
-                                    <td>Shoes</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 100</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>#</td>
-                                    <td>Shoes-Nike-A5 </td>
-                                    <td>Shoes</td>
-                                    <td>&#36; 20 </td>
-                                    <td>&#36; 25</td>
-                                    <td>&#36; 100</td>
-                                    <td>&#36; 50</td>
-
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -283,9 +207,8 @@
 
         <!-- lateast product End-->
     </div>
-    
+
 </section>
 
 
 @endsection
-

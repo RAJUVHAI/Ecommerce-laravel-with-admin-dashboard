@@ -15,13 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 route::get('/neworder','App\Http\Controllers\Admin\OrderController@index')->name('neworder');
 
+route::get('/user','App\Http\Controllers\Admin\UserController@User')->name('user');
+
 route::get('/manageorder','App\Http\Controllers\Admin\OrderController@manage')->name('manageorder');
 
 route::get('/updateorder','App\Http\Controllers\Admin\OrderController@updateorder')->name('updateorder');
 
 route::get('/addproduct','App\Http\Controllers\Admin\ProductController@prductform')->name('addproduct');
 
+route::get('/editproduct/{id}','App\Http\Controllers\Admin\ProductController@editproduct')->name('editproduct');
+
 route::post('/addproduct','App\Http\Controllers\Admin\ProductController@addProduct')->name('addproduct');
+
+route::put('/editproduct/{id}','App\Http\Controllers\Admin\ProductController@updateProduct')->name('editproduct');
 
 route::get('/manageproduct','App\Http\Controllers\Admin\ProductController@manageproduct')->name('manageproduct');
 

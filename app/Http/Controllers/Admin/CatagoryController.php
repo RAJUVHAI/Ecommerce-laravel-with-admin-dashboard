@@ -9,8 +9,20 @@ use Illuminate\Support\Facades\DB;
 class CatagoryController extends Controller
 {
     public function addcatagory(){
-        return view ('Admin/addcatagory');
+        $data['category'] = DB::table('category_tb')
+                            ->select('c_name','id','status')
+                            ->where('category',0)
+                            ->where('status',1)
+                            ->get();
+
+
+                        // echo '<pre>';
+                        // print_r($data);
+                        // die();
+                            
+        return view ('Admin/addcatagory',$data);
     }
+  
     public function postCatagory(Request $request){
         $validated = $request->validate([
             'c_name' => 'required|max:255',
