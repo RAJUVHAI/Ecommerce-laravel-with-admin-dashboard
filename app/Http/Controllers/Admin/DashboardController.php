@@ -27,6 +27,7 @@ class DashboardController extends Controller
        
     }
     public function logout(){
+        
         Session::flush('admin');
         return redirect ('admin');
     }

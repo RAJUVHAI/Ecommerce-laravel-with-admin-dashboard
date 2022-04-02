@@ -6,68 +6,147 @@
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg_customer">
-                    <div class="inner">
-                        <h3>150</h3>
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box account__summary">
+                        <div class="inner">
+                            <h3 class="counter">150</h3>
 
-                        <p>New Order</p>
+                            <p>Total Customer</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg_product">
-                    <div class="inner ">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box add__product">
+                        <div class="inner">
+                            <h3 class="counter" >53</h3>
 
-                        <p>Total Product</p>
+                            <p>Total Product</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg_order">
-                    <div class="inner">
-                        <h3>44</h3>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div style="color: white;" class="small-box new__invoice">
+                        <div class="inner">
+                            <h3 class="text-white counter">44</h3>
 
-                        <p>Total User</p>
+                            <p class="text__color">New Order</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="#" class="small-box-footer text__color text-white ">More info
+                            <i class="fas fa-arrow-circle-right text-white"></i></a>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg_sale">
-                    <div class="inner">
-                        <h3>65</h3>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box purses__report">
+                        <div class="inner">
+                            <h3 class="counter">65</h3>
 
-                        <p>Total Sale</p>
+                            <p>Total Sale</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
+                <!-- ./col -->
             </div>
-            <!-- ./col -->
-        </div>
+            <!-- /.row -->
     </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+<div class="row mt-5 ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="invoice p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/pos_invoice.png" alt="">
+                                <p> Create POS Invoice </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="new__invoice p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/create_invoice.png" alt="">
+                                <p>Create New Invoice</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="add__product  p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/add-product.png" alt="">
+                                <p>Add Product</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="add__customer  p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/add-customer.png" alt="">
+                                <p>Add Customer</p>
+                            </div>
+                        </div>   
+                        
+                        <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="sales__report  p-3 h5 text-center ">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/pos_invoice.png" alt="">
+                                <p> Sales Report </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="purses__report  p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/create_invoice.png" alt="">
+                                <p>Purses Report</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="stock__report  p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/add-product.png" alt="">
+                                <p>Stock Report</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="account__summary  p-3 h5 text-center">
+                                <img class="w-25" src="https://isshue.bdtask.com/isshue_v4_demo4/my-assets/image/dashboard/add-customer.png" alt="">
+                                <p>Account Summary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div >
+            <div >
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
 </section>
 
 <section class="content">

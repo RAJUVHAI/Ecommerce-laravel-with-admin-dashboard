@@ -18,10 +18,10 @@ class AdminSeeder extends Seeder
     {
         //
         DB::table('admin')->insert([
-            'f_name' => 'Arman',
-            'l_name' => 'Hosen',
+            'f_name' => 'Raju',
+            'l_name' => 'Hossen',
             'email' => 'admin@gmail.com',
-            'password' =>Hash::make('arman'),
+            'password' =>Hash::make('raju'),
             'image' =>'',
             'is_admin' => 1,
             'status' => 1,  

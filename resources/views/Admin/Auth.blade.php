@@ -20,17 +20,17 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini login_bg">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="card col-lg-3 p-2 col-md-6 col-sm-block card-box shadow position-card">
+<body class="hold-transition  body_bg login_bg">
+    <div class="container-fluid pt-3 ">
+        <div class="row d-flex justify-content-center mt-5 pt-5 ">
+            <div class="col col-lg-3 p-2 col-md-3 py-5 ml-5  shadow  authcenter">
                 @if($errors->any())
                 <div class="alert alert-danger">
                     {{$errors->first()}}
                 </div>
                 @endif
-                <div class="p-1 card-title bg-primary text-center">
-                    <h4>Admin Login</h4>
+                <div class="p-1 text-primary text-center">
+                    <h4 class="font-weight-bold adminHeadingTxt">Admin Login</h4>
                 </div>
 
                 <!-- form start -->
@@ -39,7 +39,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label for="exampleInputEmail1 text-primary">Email address</label>
                             <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                 placeholder="Enter email" required>
                         </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                    <div class="card-footer">
+                    <div class="ml-3">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>

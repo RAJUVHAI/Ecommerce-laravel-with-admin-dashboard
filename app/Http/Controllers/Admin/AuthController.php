@@ -10,6 +10,8 @@ use Session;
 use Redirect;
 class AuthController extends Controller
 {
+
+   
     public function index(){
         $check = Session::get('admin');
 
@@ -18,6 +20,10 @@ class AuthController extends Controller
         }
         return view('Admin/auth');
     }
+
+
+ 
+
 
     public function postLogin(request $request){
         $validated = $request->validate([
@@ -77,6 +83,8 @@ class AuthController extends Controller
         //     print_r($request ->all());
         //     echo '</pre>';
     }
+
+    
 }
 
     ?>

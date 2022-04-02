@@ -17,6 +17,7 @@ class CategoryTb extends Migration
             $table->increments('id');
             $table->string('c_name' , 255);
             $table->integer('category');
+            $table->string('image');
             $table->tinyInteger('status')->comment('0 = Active ,  1= Deactive');
             $table->timestamps();
         });

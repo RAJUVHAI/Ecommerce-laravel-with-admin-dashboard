@@ -1,21 +1,25 @@
-.login_bg {
+.body_bg {
     background: url(../img/login-bg.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-repeat: no-repeat;
+    height:100vh;
+    
+}
+.adminHeadingTxt {
+    background: #0045CF;
+    background: -webkit-linear-gradient(to right, #0045CF 0%, #FF0000 100%);
+    background: -moz-linear-gradient(to right, #0045CF 0%, #FF0000 100%);
+    background: linear-gradient(to right, #0045CF 0%, #FF0000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:35px
 }
 
-.position-card {
-    position: absolute;
-
-    left: 25%;
-}
 
 @media only screen and (max-width: 768px) {
-    .position-card {
-        position: absolute;
-        left: 0%;
-    }
+    
 }
 
 nav.main-header {
@@ -131,4 +135,59 @@ nav.main-header {
     .card-box {
         margin-top: 30px;
     }
+}
+
+
+
+/* dashboard code */
+
+.invoice{
+    background:linear-gradient(to right, #5A27D6,#2F66F5);
+    color: white;
+}
+.new__invoice{
+    background:linear-gradient(to right, #FD6119,#FFA417);
+    color: white;
+
+}
+
+.add__product{
+    background:linear-gradient(to right, #20B888,#83D24B);
+    color: white;
+
+}
+
+
+.add__customer{
+    background:linear-gradient(to right, #F11965,#FD5819);
+    color: white;
+
+}
+.sales__report{
+    background:linear-gradient(to right, #15B9B9,#1D7ACC);
+    color: white;
+
+}
+.purses__report{
+    background:linear-gradient(to right,#7E2BD9 , #CA3BBE);
+    color: white;
+
+}
+.stock__report{
+    background:linear-gradient(to right, #F8A22F,#FB5F1E);
+    color: white;
+
+}
+.account__summary{
+    background:linear-gradient(to right,#338bd8 ,#0cbdbd);
+    color: white;
+
+}
+.text__color{
+    color: white !important;
+}
+
+.bg-light1{
+    background-color: rgb(214, 238, 242);
+    padding: 40px;
 }

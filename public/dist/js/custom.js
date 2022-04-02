@@ -12,7 +12,7 @@ $(function () {
         },
         password: {
           required: true,
-          minlength: 5
+          minlength: 4
         },
         terms: {
           required: true
